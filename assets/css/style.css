@@ -20,9 +20,9 @@
    * colors
    */
 
-  --safety-orange: hsl(25, 100%, 50%);
+  --safety-orange: hsl(15, 90%, 50%);
   --lavender-gray: hsl(230, 19%, 81%);
-  --persian-rose: hsl(328, 100%, 59%);
+  --persian-rose: hsl(228, 90%, 59%);
   --red-crayola: hsl(341, 100%, 49%);
   --eerie-black: hsl(240, 6%, 10%);
   --light-gray: hsl(0, 0%, 80%);
