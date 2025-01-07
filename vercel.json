@@ -1,0 +1,7 @@
+{
+    "rewrites": [
+      { "source": "/sandalmazi", "destination": "/pages/sandalmazi.html" },
+      { "source": "/privacy-policy", "destination": "/privacy-policy.html" }
+    ]
+}
+  
