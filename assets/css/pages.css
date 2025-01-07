@@ -1,0 +1,211 @@
+/*-----------------------------------*\
+  #IMPORT BASE STYLE
+\*-----------------------------------*/
+
+@import url('./style.css');
+
+/*-----------------------------------*\
+  #HERO SECTION PERSONALIZZAZIONE
+\*-----------------------------------*/
+
+.hero {
+    padding: 0;
+}
+
+.hero-image-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--overlay-color, rgba(0, 0, 0, 0.6));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 2;
+  padding: 20px;
+}
+
+.hero-overlay .h1 {
+  font-family: var(--ff-league-spartan);
+  font-size: var(--fs-1);
+  color: var(--primary-color, hsl(0, 0%, 100%));
+  margin-bottom: 10px;
+}
+
+.hero-overlay .hero-subtitle {
+  font-size: var(--fs-4);
+  font-weight: var(--fw-500);
+  color: var(--secondary-color, hsl(0, 0%, 100%));
+  margin-bottom: 5px;
+}
+
+.hero-overlay .hero-text {
+  font-size: 2.5rem;
+  font-style: italic;
+  color: var(--accent-color, hsl(0, 0%, 100%));
+  margin-bottom: 20px;
+}
+
+.hero-overlay .hero-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: var(--fs-6);
+  font-weight: var(--fw-700);
+  color: var(--white-1);
+  background-color: var(--accent-color, hsl(341, 100%, 49%));
+  border: none;
+  border-radius: var(--radius-5);
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: var(--transition-1);
+}
+
+.hero-overlay .hero-button ion-icon {
+  font-size: 1.5rem;
+}
+
+.hero-overlay .hero-button:hover {
+  background-color: var(--primary-color, hsl(0, 0%, 0%));
+  color: var(--white-1);
+}
+
+/*-----------------------------------*\
+  #GRID E PROJECT BOX
+\*-----------------------------------*/
+
+.grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+  gap: 40px;
+}
+
+.project-box {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--white-1);
+  border-radius: var(--radius-5);
+  box-shadow: var(--shadow-1);
+  transition: var(--transition-1);
+}
+
+.project-box img {
+  height: 60%;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.project-box:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-2);
+}
+
+/* Step indicator */
+.step-indicator {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  background-color: var(--accent-color, hsl(341, 100%, 49%));
+  color: var(--white-1);
+  font-family: var(--ff-league-spartan);
+  font-size: 1.5rem;
+  font-weight: var(--fw-700);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: var(--shadow-1);
+  z-index: 1;
+}
+
+/*-----------------------------------*\
+  #ABOUT LIST E BENEFICI
+\*-----------------------------------*/
+
+.about-list {
+  list-style: none;
+  padding: 0;
+}
+
+.about-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.about-item ion-icon {
+  color: var(--accent-color, hsl(341, 100%, 49%));
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.about-item p {
+  font-size: var(--fs-5);
+  line-height: 1.6;
+}
+
+/*-----------------------------------*\
+  #FOOTER PERSONALIZZAZIONE
+\*-----------------------------------*/
+
+.footer {
+  background-color: var(--cultured-2, hsl(210, 60%, 98%));
+  padding: 20px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: var(--fs-6);
+}
+
+.footer a {
+  color: var(--primary-color, hsl(15, 90%, 50%));
+  font-weight: var(--fw-700);
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/*-----------------------------------*\
+  #TITOLO E CONTENUTI
+\*-----------------------------------*/
+
+#project-details .h2 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/*-----------------------------------*\
+  #LOGO PERSONALIZZAZIONE
+\*-----------------------------------*/
+
+.logo {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  color: var(--eerie-black);
+  padding: 10px;
+}
