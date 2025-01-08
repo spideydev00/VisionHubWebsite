@@ -91,7 +91,6 @@
 /*-----------------------------------*\
   #GRID E PROJECT BOX
 \*-----------------------------------*/
-
 .grid-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
@@ -208,4 +207,17 @@
   margin: 0 auto;
   color: var(--eerie-black);
   padding: 10px;
+}
+
+@media (max-width: 768px) {
+  /* Styles for mobile devices */
+  .grid-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1.5fr));
+    gap: 60px
+  }
+
+  .project-box {
+    height: fit-content;
+  }
 }
