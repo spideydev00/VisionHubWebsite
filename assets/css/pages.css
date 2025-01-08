@@ -221,3 +221,28 @@
     height: fit-content;
   }
 }
+
+/*-----------------------------------*\
+  #SOCIAL ICONS SECTION
+\*-----------------------------------*/
+.social-icons {
+  margin-top: 80px; /* Spazio sopra per separare dalla Hero Section */
+  text-align: center;
+}
+
+.social-row {
+  display: flex;
+  justify-content: center; /* Centra le icone orizzontalmente */
+  gap: 40px; /* Spazio tra le icone */
+}
+
+.social-icon {
+  font-size: 3rem; /* Dimensione delle icone */
+  color: var(--primary-color, hsl(341, 100%, 49%));
+  transition: var(--transition-1); /* Transizione per l'hover */
+}
+
+.social-icon:hover {
+  color: var(--secondary-color, hsl(15, 90%, 50%));
+  transform: scale(1.1); /* Effetto di ingrandimento */
+}
