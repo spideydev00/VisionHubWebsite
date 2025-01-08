@@ -1,8 +1,9 @@
 {
-    "rewrites": [
-      { "source": "/sandalmazi", "destination": "/pages/sandalmazi.html" },
-      { "source": "/snai-fallendo", "destination": "/pages/snai-fallendo.html" },
-      { "source": "/privacy-policy", "destination": "/privacy-policy.html" }
-    ]
+  "rewrites": [
+    {
+      "source": "/:path*",
+      "destination": "/:path*.html"
+    }
+  ]
 }
   
