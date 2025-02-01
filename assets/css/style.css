@@ -2,14 +2,6 @@
   #style.css
 \*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
 /*-----------------------------------*\
   #CUSTOM PROPERTY
 \*-----------------------------------*/
@@ -24,6 +16,7 @@
   --lavender-gray: hsl(230, 19%, 81%);
   --light-blue: hsl(195, 53%, 55%);
   --steel-blue: hsl(207, 44%, 49%);
+  --deep-royal-blue: hsl(233, 50%, 25%);
   --eerie-black: hsl(240, 6%, 10%);
   --light-gray: hsl(0, 0%, 80%);
   --cultured-2: hsl(210, 60%, 98%);
@@ -41,6 +34,7 @@
    */
 
   --gradient: linear-gradient(to left top, var(--light-blue), var(--light-sky-blue), var(--steel-blue));
+  --gradient-darker: linear-gradient(to left top, var(--steel-blue), var(--deep-royal-blue), var(--eerie-black));
 
   /**
    * typography
@@ -334,7 +328,7 @@ body {
   transition: var(--transition-1);
 }
 
-.header.active { filter: drop-shadow(var(--shadow-2)); }
+.header.active { filter: drop-shadow(var(--shadow-5)); }
 
 .header > .container {
   display: flex;
@@ -617,7 +611,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: var(--gradient);
+  background-image: var(--gradient-darker);
   opacity: 0.95;
   z-index: -1;
 }
@@ -667,6 +661,91 @@ body {
 .blog-card .card-title:is(:hover, :focus) { color: var(--steel-blue); }
 
 
+
+/*-----------------------------------*\
+  #PRENOTA UNA CALL SECTION 
+\*-----------------------------------*/
+.call-section {
+  background: var(--gradient-darker);
+  color: var(--white-1);
+  padding: 80px 5%;
+  text-align: center;
+}
+
+.call-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+}
+
+.call-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.call-title {
+  font-size: var(--fs-2);
+  font-weight: 700;
+  color: var(--white-1);
+  margin-bottom: 20px;
+}
+
+.call-description {
+  font-size: var(--fs-5); 
+  color: var(--platinum);
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.call-image img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px var(--black_10);
+}
+
+/* Responsive per miglior bilanciamento */
+@media (max-width: 1024px) {
+  .call-content {
+    max-width: 900px;
+    gap: 40px;
+  }
+
+  .call-description {
+    max-width: 600px;
+  }
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .call-content {
+    flex-direction: column;
+    margin: 0;
+    align-items: center;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .call-text {
+    flex: 1;
+    font-size: var(--fs-6);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .call-image {
+    width: 90%;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+}
 
 
 
@@ -777,9 +856,12 @@ textarea.input-field {
 
 .contact-card .card-link:is(:hover, :focus) { color: var(--steel-blue); }
 
-
-
-
+.divider {
+  height: 2px;
+  background: #d4d4d4;
+  width: 30%;
+  margin: 40px auto;
+}
 
 /*-----------------------------------*\
   #FOOTER

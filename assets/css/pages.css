@@ -5,6 +5,15 @@
 @import url('./style.css');
 
 /*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.logo-image {
+  margin: 0 auto;
+}
+
+
+/*-----------------------------------*\
   #HERO SECTION PERSONALIZZAZIONE
 \*-----------------------------------*/
 
@@ -59,7 +68,7 @@
 .hero-overlay .hero-text {
   font-size: 2.5rem;
   font-style: italic;
-  color: var(hsl(0, 0%, 100%));
+  color: var(--white-1);
   margin-bottom: 20px;
 }
 
@@ -71,12 +80,13 @@
   font-size: var(--fs-6);
   font-weight: var(--fw-700);
   color: var(--white-1);
-  background-color: var(--gradient);
+  background-color: var(--steel-blue);
   border: none;
   border-radius: var(--radius-5);
   text-transform: uppercase;
   text-decoration: none;
   transition: var(--transition-1);
+  cursor: pointer;
 }
 
 .hero-overlay .hero-button ion-icon {
@@ -84,7 +94,7 @@
 }
 
 .hero-overlay .hero-button:hover {
-  background-color: var(--primary-color, hsl(0, 0%, 0%));
+  background-color: var(--deep-royal-blue);
   color: var(--white-1);
 }
 
@@ -102,7 +112,7 @@
   text-align: center;
   padding: 10px;
   background-color: var(--white-1);
-  border-radius: var(--radius-5);
+  border-radius: var(--radius-8);
   box-shadow: var(--shadow-1);
   transition: var(--transition-1);
 }
@@ -121,14 +131,14 @@
 /* Step indicator */
 .step-indicator {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 40px;
-  height: 40px;
+  top: 2px;
+  left: 2px;
+  width: 50px;
+  height: 50px;
   background-color: var(--steel-blue);
   color: var(--white-1);
   font-family: var(--ff-league-spartan);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: var(--fw-700);
   display: flex;
   justify-content: center;
