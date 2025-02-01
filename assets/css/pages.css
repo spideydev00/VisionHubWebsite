@@ -190,7 +190,6 @@
 }
 
 .footer a {
-  color: var(--primary-color, hsl(15, 90%, 50%));
   font-weight: var(--fw-700);
 }
 

@@ -317,7 +317,7 @@ body {
 \*-----------------------------------*/
 
 .header {
-  position: fixed;
+  position: static;
   top: 0;
   left: 0;
   width: 100%;
@@ -882,9 +882,6 @@ textarea.input-field {
   font-weight: var(--fw-500);
   display: inline-block;
 }
-
-
-
 
 
 /*-----------------------------------*\
